@@ -1,0 +1,163 @@
+body {
+
+    padding:0;
+    cursor: url('images/chair%20cursor.png'), auto;
+    /*    background-color: #231a3b;*/
+    background-image: url(images/background.png);
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-attachment: fixed;
+    color: #1b1226;
+    font-family: "Montserrat";
+    padding-bottom: 30px;
+}
+
+.outsidetext {
+    text-align: center;
+    color:floralwhite;
+}
+
+.img_chair {
+  float:left;
+      max-width:40%;
+    max-height: 200px;
+    margin-right: 5%;
+
+}
+
+.img_chair:hover{
+    transition: .5s;
+/*        -webkit-filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));*/
+     filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.6));
+    transition:.5s;
+}
+
+bl {
+    list-style: square;
+    list-style-position: outside;
+}
+
+
+
+header {
+    
+/*    background-color: floralwhite;*/
+    color: floralwhite;
+/*    padding:3px;*/
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 0px 0px 10px 10px ; 
+    border-color: floralwhite;
+    border-style: dashed;
+    column-count: 3;
+    margin:0;
+    
+        align-content: center;
+        border-color: #474543;
+
+}
+
+
+
+h1 {
+    font-size: 600%;
+    font-weight:400;
+line-height: .9;
+margin-bottom: 12px;
+    margin-top: 0;
+}
+
+h4 {
+    font-size: 300%;
+    font-weight:300;
+
+margin-bottom: 0;
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0;
+    font-weight: 200;
+}
+
+
+.pos_center {
+    position:static;
+    
+/*    align-items: center;*/
+/*    background-image: linear-gradient(floralwhite,white);*/
+    color:floralwhite;
+    opacity: 100%;
+    padding: 3%;
+    border-radius: 10px;
+    border-style: dotted;
+    overflow: hidden;
+    transition:0.3s;
+}
+
+.pos_center:hover {
+  transform: scale(1.05);
+ 
+  transform-origin: center;
+}
+
+
+.lowershit{
+        padding-left: 10%;
+    padding-right:10%;
+}
+
+.year {
+    text-shadow: 20% 
+}
+
+.first {
+    width: 100%;
+    float: left;
+}
+
+.first:hover{
+/*color:blue;*/
+text-shadow: 0px 0px 70px #00F;
+    text-shadow: 0px 0px 30px #00F;
+    text-shadow: 0px 0px 10px #00F;
+font-weight: 400;
+}
+
+#new-font-size {
+    
+    font-size: 70%;
+font-weight: 500;
+opacity: 60%
+}
+
+a:link {
+  color: floralwhite;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: floralwhite;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: floralwhite;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: floralwhite;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}

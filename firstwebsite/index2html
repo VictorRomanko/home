@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+<head>
+<title>first webpage made in handmade web</title>        
+    </head>
+    <body>
+        <h1>
+       THE SEQUEL YO       
+        </h1>
+            <h2>
+        yeah, you read that right. we did it again
+        </h2>
+        <p>
+        Ithey said it couldn't be done... they were right.
+        </p>
+        
+        <p> this is a list of awesome freaking things</p>
+        <ul>
+            <li><a href="https://www.marketwatch.com/investing/stock/gme">cash</a></li>
+            <li>guns</li>
+            <li>explosions</li>
+        </ul>
+        
+         <p> this the same list of awesome freaking things but it's ordered</p>
+        <ol>
+        <li>cash</li>
+            <li>guns</li>
+            <li>explosions         <img src="kablam.gif" width="400">
+</li>
+        </ol>
+        
+        <! --<script src="test.js"></script>
+        
+    </body>
+</html> 
