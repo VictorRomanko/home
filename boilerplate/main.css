@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: lime;
+}
+
+
+img {
+    
+    max-width: 100%
+}
