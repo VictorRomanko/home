@@ -29,6 +29,13 @@ z-index: 1;
 /*    border-radius: 10px;*/
     
 }
+h1 {
+font-size: 54px;
+padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
 
 .sitebox {
     float:left;
@@ -69,4 +76,10 @@ a:active {
   color: floralwhite;
   background-color: transparent;
   text-decoration: underline;
+}
+.bonuspad {
+    padding-left: 20px;
+}
+p {
+    padding-left: 12px;
 }

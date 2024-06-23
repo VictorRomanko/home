@@ -1,26 +1,103 @@
 body {
-background-color: cornflowerblue  ;
-color: aliceblue;
-  font-family: "Montserrat", sans-serif;
-
+background: linear-gradient(#749bfc, #749bfc, #749bfc, #a6f7f6, white);
+color: floralwhite;
+  font-family: "DM sans", sans-serif;
+z-index: 1;
+    margin:20px
 }
 
 
-.reading {
+.writing {
+    width:400px;
+border-style: dotted;
+    border-radius:10px;
+    
+}
+
+
+details {
+    
+      padding: 10px;;
+  border-radius: 5px;
+    border-style: dotted;
     width:50%;
-    color:black;
-    background-color: rgba(255,255,255,0.7);
+}
+
+.tree {
+    height:100%;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    z-index: -1;
+}
+
+.footer {
+    
+    position:absolute;
+    bottom:0px;
+    left:0px;
+/*    border-style: dotted;*/
+    color:749bfc;
+/*    margin:20px;*/
+    padding:20px;
+/*    padding-top: 3px;*/
+/*    padding-bottom:3px;*/
+/*    border-radius: 10px;*/
+    
+}
+
+
+
+.sitebox {
+    float:left;
+    width:100px;
+    height:130px;
     border-radius: 10px;
+    border-style: dashed;
     padding: 10px;
-    border-style: dotted
-            float:left;
+    margin: 10px
 }
 
-.response {
-    padding-left: 20px;
-
+.sitebox:hover {
+ transform: scale(1.1);   
+    
 }
 
-.image {
-    width:40%
+.icon {
+    max-height: 100px;
+    margin-bottom: 10px
+}
+
+a:link {
+  color: floralwhite;
+    opacity: 50%;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+    opacity: 50%;
+  color: floralwhite;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: floralwhite;
+    opacity:100%;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: floralwhite;
+    opacity: 100%;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.return {
+    color:red;
+    
+}
+
+p1 {
+    text-align: center;
 }
