@@ -1,8 +1,67 @@
 body {
-background-color: cornflowerblue  ;
-color: aliceblue;
-  font-family: "Montserrat", sans-serif;
-
+background: linear-gradient(#749bfc, #749bfc, #749bfc, #a6f7f6, white);
+color: floralwhite;
+  font-family: "DM sans", sans-serif;
+z-index: 1;
+    margin:20px
 }
 
 
+.tree {
+    height:100%;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    z-index: -1;
+}
+
+.footer {
+    
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    border-style: dotted;
+    color:749bfc;
+    margin:20px;
+    padding:10px;
+    padding-top: 3px;
+    padding-bottom:3px;
+    border-radius: 10px;
+    
+}
+
+.sitebox {
+    float:left;
+    width:100px;
+    height:130px;
+    border-radius: 10px;
+    border-style: dashed;
+    padding: 10px;
+    margin: 10px
+}
+
+.icon {
+    max-height: 100px;
+    margin-bottom: 10px
+}
+
+a:link {
+  color: floralwhite;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: floralwhite;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: floralwhite;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: floralwhite;
+  background-color: transparent;
+  text-decoration: underline;
+}
