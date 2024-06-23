@@ -20,13 +20,13 @@ z-index: 1;
     position:absolute;
     bottom:0px;
     left:0px;
-    border-style: dotted;
+/*    border-style: dotted;*/
     color:749bfc;
-    margin:20px;
-    padding:10px;
-    padding-top: 3px;
-    padding-bottom:3px;
-    border-radius: 10px;
+/*    margin:20px;*/
+    padding:20px;
+/*    padding-top: 3px;*/
+/*    padding-bottom:3px;*/
+/*    border-radius: 10px;*/
     
 }
 
@@ -38,6 +38,11 @@ z-index: 1;
     border-style: dashed;
     padding: 10px;
     margin: 10px
+}
+
+.sitebox:hover {
+ transform: scale(1.1);   
+    
 }
 
 .icon {
