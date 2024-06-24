@@ -8,8 +8,9 @@ z-index: 1;
 
 
 .writing {
-    width:400px;
+    width:500px;
 border-style: dotted;
+       
     border-radius:10px;
     
 }
@@ -20,7 +21,9 @@ details {
       padding: 10px;;
   border-radius: 5px;
     border-style: dotted;
-    width:50%;
+ overflow-y: auto;
+    width:600px;
+    max-height: 200px;
 }
 
 .tree {
@@ -30,6 +33,30 @@ details {
     right:0px;
     z-index: -1;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 
 .footer {
     
