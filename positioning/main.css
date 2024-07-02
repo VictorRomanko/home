@@ -99,20 +99,74 @@ img {
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    border-radius: 100%    
+    border-radius: 100%    ;
+    z-index:0;
 }
+
 
 .eye {
     background-color: white;
     width:50px;
     height:50px;
-    position:fixed;
+    position:absolute;
     top:50%;
     left:50%;
-    transform:translate(-50%,-50%);
     border-radius: 100%    
 }
-
 .left {
-    
+    left:30px;
+        top:120px
 }
+.right {
+            top:120x;
+
+    right:60px;
+}
+
+.mouth {
+    position: absolute;
+    background-color: coral;
+    width: 130px;
+    height: 49px;
+    left: 35px;
+    top: 207px;
+    transform: rotate(15deg);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-style: inset;
+}
+
+.hatbrim {
+    position: absolute;
+    background-color: aqua;
+    border-radius: 100%;
+    width: 296px;
+    height: 129px;
+    top: 3px;
+    left: -25px;
+    transform: rotate(15deg);
+}
+
+.hat {
+ 
+    position: absolute;
+    background-color: dodgerblue;
+    border-radius: 46%;
+    width: 282px;
+    height: 192px;
+    top: -70px;
+    left: 40px;
+    transform: rotate(16deg);
+    }
+
+.ear {
+    
+    position:absolute;
+    width: 90px;
+    height:80px;
+    right:-30px;
+    top:140px;
+    background-color:lime;
+    border-radius: 100%;
+}
+

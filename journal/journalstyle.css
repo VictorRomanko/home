@@ -22,8 +22,9 @@ details {
   border-radius: 5px;
     border-style: dotted;
  overflow-y: auto;
-    width:600px;
+    max-width:600px;
     max-height: 200px;
+    margin-top: 10px;
 }
 
 .tree {

@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow: hidden;
+    margin: 0px;
+    background-color: white;
+}
+
+
+img {
+    
+    max-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height: 100vh;
+    gap:10px;
+}
+
+.spot {
+    
+    width:100px;
+        height:160px;
+    background-color: darkgrey;
+    display:flex;
+        align-items: center;
+    justify-content: center;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY();
+    }
+    100% {
+        transform: translateY(40px)
+    }
+    
+}
+
+.toy{
+    
+    width:90px;
+    height:120px;
+    background-color: blueviolet;
+}
+
+.toy:hover{
+    background-color: aquamarine;
+    animation: fall 2s forwards;
+}
+
+

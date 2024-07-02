@@ -1,0 +1,197 @@
+*, html {
+    margin:0;
+    padding:0;  
+    font-family:"Montserrat";
+}
+
+
+img {
+    max-width:  100%;
+    z-index: 1;
+    position: relative;
+    
+}
+.body {
+    margin:0px;
+    padding: 0px;
+
+}
+
+.page {
+        margin:0px;
+    padding: 0px;
+        overflow: hidden;
+    width: 100vw;
+    height:300vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: white;
+    top:70px;
+    
+
+}
+
+
+.welcome {
+    height:40px;
+    width: 100%;
+
+    position: absolute;
+    margin:0px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+p {
+    
+    border: 1px dashed;
+    padding:10px;
+    border-radius: 10px;
+    width:30%;
+    transform: translateY(10px);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.shelf {
+    margin-left:100px;
+    margin-right:100px;
+    margin-top: 150px;
+    align-content: center
+}
+
+.backer{
+    width:210px;
+    height:260px;
+    background-image: url(STRUCTUREIMAGES/backer.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 200px;
+    height: 250px;
+    background-color: rgba(1,1,1,0);
+    transition: transform 0.5s;
+    display:flex;
+    justify-content: center;
+     z-index: 90;  
+    position: relative;
+}
+
+.mainshelf {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url(STRUCTUREIMAGES/wire.png);
+    max-width: 700px;
+    gap:0px
+    
+}
+
+.upper {
+    height: 70px;
+    width:100%;
+    background-color: lightgray;
+    
+    
+    
+}
+
+.lower {
+    background: linear-gradient(darkslategray,lightgray);
+        height: 70px;
+    width:100%;
+    z-index: -10;
+
+    
+}
+
+.rim {
+    background-color: lightgray;
+    height:20px;
+    width: 110%;
+    transform: scaleY(110%);
+    transform: translate(-5%);
+
+    z-index:-1;
+}
+
+
+.arrive {
+    left:0px;
+    height:160px;
+    top:-70px;
+}
+
+
+@keyframes example {
+    0% { transform: scale(1); }
+
+    100% { transform: scale(2); }
+}
+
+@keyframes shrink {
+    0% { transform: scale(2); }
+
+    100% { transform: scale(1); }
+}
+
+
+@keyframes drop {
+    0% { transform:translateY(); 
+        opacity: 100%
+    
+    }
+    25% { transform: translateY(750px); 
+    opacity: 70%;
+    }
+    100% { transform: translateY(3000px); 
+    opacity: 0%;
+    }
+}
+
+
+
+.box.animated {
+    animation: example .5s forwards;
+    z-index: 100;
+}
+
+.toy.fall {
+    animation: drop 3.5s forwards linear;
+}
+
+.box.scaledown {
+    animation: shrink 1s forwards linear;
+}
+
+
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}

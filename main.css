@@ -3,7 +3,8 @@ background: linear-gradient(#749bfc, #749bfc, #749bfc, #a6f7f6, white);
 color: floralwhite;
   font-family: "DM sans", sans-serif;
 z-index: 1;
-    margin:20px
+    margin:20px;
+    overflow: hidden;
 }
 
 
@@ -44,13 +45,57 @@ padding-left: 10px;
     border-radius: 10px;
     border-style: dashed;
     padding: 10px;
-    margin: 10px
+    margin: 10px;
+    transition-duration: .41s;
 }
 
 .sitebox:hover {
  transform: scale(1.1);   
     
 }
+
+.leafwrapper {
+    animation: yaxis 3s infinite;
+    animation-timing-function: ease-in-out
+        z-index: -10;
+    position:absolute;
+}
+
+.leaf {
+    z-index: -10;  
+    animation: xaxis 2.5s infinite ease-in;
+  
+}
+
+@keyframes xaxis {
+    0% {
+        transform: translateX(100vw)
+    }
+    
+    100% {
+        transform: translateX(0vw)
+    }
+}
+
+@keyframes yaxis {
+    0% {
+        transform: translateY(0vh)
+    }
+    
+    50% {
+        transform: translateY(100vh)
+    }
+    
+    100% {
+        transform: translateY(0vh)
+    }
+}
+
+
+
+
+
+
 
 .icon {
     max-height: 100px;
