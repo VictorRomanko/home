@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: lime;
+}
+
+
+img {
+    
+    max-width: 100%
+}
+
+iframe {
+    width:770px;
+    height: 400px;
+}

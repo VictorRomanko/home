@@ -1,0 +1,104 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color:darkslategray
+}
+
+img {
+    
+    max-width: 100%
+}
+
+.maincontainer {
+    background-color: lightblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+
+}
+
+.topcontainer {
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+
+}
+
+.maincontainer {
+    background-color: lightblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 600px;
+    gap: 10px;
+
+}
+
+.bottomcontainer {
+    background-color: lightblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+      gap: 10px;
+
+}
+
+
+.item {
+    background-color: bisque;
+    padding:10px;
+    border: 1px solid;
+width:100%
+
+
+}
+
+.leftbox {
+    
+    background-color: lightgreen;
+    width:100%;
+    height:390px
+}
+
+.rightrows {
+    display: flex;
+    background-color: pink;
+        width:100%;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:10px;
+}
+
+.item2 {
+    background-color: darkseagreen;
+    padding:10px;
+    border: 1px solid;
+    height:90px;
+        width:100%;
+  
+
+}
