@@ -26,7 +26,7 @@ const aspect = w/h;
 const near = 0.1;
 const far = 1000;
 const camera = new THREE.PerspectiveCamera(fov,aspect,near,far)
-camera.position.set(4,5,11);
+camera.position.set(14,15,11);
 const scene = new THREE.Scene();
 
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -95,10 +95,10 @@ scene.add( plane );
 
 
 
-const geometry = new THREE.BoxGeometry();
-for ( let i = 0; i < 20; i ++ ) {
+const geometry = new THREE.IcosahedronGeometry(1.0,2);
+for ( let i = 0; i < 50; i ++ ) {
 
-    const object = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: Math.random() * 0xffffff +0xaaaaaa } ) );
+    const object = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: (Math.random() * 0xffffff) } ) );
 
     object.position.x = Math.random() * 40 - 20;
     object.position.y = Math.random() * 40 - 20;
@@ -107,12 +107,16 @@ for ( let i = 0; i < 20; i ++ ) {
     object.rotation.x = Math.random() * 2 * Math.PI;
     object.rotation.y = Math.random() * 2 * Math.PI;
     object.rotation.z = Math.random() * 2 * Math.PI;
-
-    object.scale.x = Math.random() + 0.5;
-    object.scale.y = Math.random() + 0.5;
-    object.scale.z = Math.random() + 0.5;
+ const scaler = Math.random();
+    object.scale.x = scaler;
+    object.scale.y = scaler;
+    object.scale.z = scaler;
+    // enable transparency
+object.material.transparent = true;
+// set opacity to 50%
+object.material.opacity = 0.3; 
     object.castShadow = true;
-
+object.material.shading = THREE.SmoothShading;
     scene.add( object );
 
 }
