@@ -17,6 +17,18 @@ body {
     border-radius:50px
 }
 
+.bottom {
+    position:absolute;
+    bottom:24px;
+    margin:0px;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+
+    
+}
+
+
 /* unvisited link */
 a:link {
   color: grey;

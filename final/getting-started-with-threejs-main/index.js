@@ -31,12 +31,12 @@ const scene = new THREE.Scene();
 
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
-controls.enablePan = false;
+//controls.enablePan = false;
 controls.minDistance = 5;
 controls.maxDistance = 30;
 controls.autoRotate = false;
 controls.maxPolarAngle = 1.5;
-controls.target = new THREE.Vector3(0,3,0);
+controls.target = new THREE.Vector3(0,5,0);
 controls.update();
 
 
@@ -96,7 +96,7 @@ scene.add( plane );
 
 
 const geometry = new THREE.IcosahedronGeometry(1.0,2);
-for ( let i = 0; i < 50; i ++ ) {
+for ( let i = 0; i < 300; i ++ ) {
 
     const object = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: (Math.random() * 0xffffff) } ) );
 
@@ -107,14 +107,14 @@ for ( let i = 0; i < 50; i ++ ) {
     object.rotation.x = Math.random() * 2 * Math.PI;
     object.rotation.y = Math.random() * 2 * Math.PI;
     object.rotation.z = Math.random() * 2 * Math.PI;
- const scaler = Math.random();
+ const scaler = Math.random()/10;
     object.scale.x = scaler;
     object.scale.y = scaler;
     object.scale.z = scaler;
     // enable transparency
 object.material.transparent = true;
 // set opacity to 50%
-object.material.opacity = 0.3; 
+object.material.opacity = 0.2; 
     object.castShadow = true;
 object.material.shading = THREE.SmoothShading;
     scene.add( object );
@@ -165,6 +165,9 @@ function animate(t=0){
     requestAnimationFrame(animate);
     mesh.rotation.y = t*0.0004;
 
+    if(camera.position.y < 0.3){
+    camera.position.y = 0;
+}
 
 
 
