@@ -16,3 +16,30 @@ body {
     border:2px dotted grey;
     border-radius:50px
 }
+
+/* unvisited link */
+a:link {
+  color: grey;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: grey;
+        text-decoration: none;
+
+}
+
+/* mouse over link */
+a:hover {
+  color: deepskyblue;
+        text-decoration: none;
+
+}
+
+/* selected link */
+a:active {
+  color: grey;
+        text-decoration: none;
+
+}
