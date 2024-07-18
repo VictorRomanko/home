@@ -88,7 +88,7 @@ const newshadowmat = new THREE.ShadowMaterial();
 newshadowmat.opacity = 0.2;
 
 const plane = new THREE.Mesh( catcher, newshadowmat );
-plane.position.y = -200;
+plane.position.y = -201;
 plane.receiveShadow = true;
 scene.add( plane );
 
@@ -104,10 +104,14 @@ for ( let i = 0; i < 300; i ++ ) {
     object.position.y = Math.random() * 40 - 20;
     object.position.z = Math.random() * 40 - 20;
 
+
+    
+    
+    
     object.rotation.x = Math.random() * 2 * Math.PI;
     object.rotation.y = Math.random() * 2 * Math.PI;
     object.rotation.z = Math.random() * 2 * Math.PI;
- const scaler = Math.random()/10;
+ const scaler = Math.random()/3;
     object.scale.x = scaler;
     object.scale.y = scaler;
     object.scale.z = scaler;
